@@ -1,0 +1,152 @@
+:root{
+    --primary-color: beige;
+    --secondary-color: darkslategray;
+    --tertiary-color: crimson;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/* Header Section Styles */
+header{
+    width: 20%;
+    height: 0;
+    min-width: 200px;
+    position: sticky;
+    top: 0px;
+    z-index: 10;
+}
+
+header nav{
+    display: flex;
+    flex-direction: column;
+}
+
+header h1{
+    font-size: 48px;
+    padding: 20px;
+    color: var(--primary-color);
+    background-color: var(--tertiary-color);
+    border: 4px solid var(--primary-color);
+}
+
+header ul{
+    width: 60%;
+    list-style: none;
+}
+
+header li{
+    font-size: 28px;
+    padding: 10px;
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+    border: 4px solid var(--tertiary-color);
+}
+
+header div h3{
+    font-size: 20px;
+}
+
+/* Hero Styles */
+.hero{
+    background-image: url("../images/placeholder.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+    color: var(--primary-color);
+    position: relative;
+    top: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    align-items: center;
+    border-bottom: 4px solid var(--tertiary-color);
+}
+
+.hero div{
+    color: var(--primary-color);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column ;
+    align-items: center;
+}
+
+.hero h2{
+    text-decoration: underline;
+    font-size: 32px;
+}
+
+/* Main Body Section Styles */
+.main-content-body{
+    display: flex;
+    background-color: var(--primary-color);
+    border-bottom: 4px solid var(--tertiary-color);
+}
+
+.side-title{
+    color: var(--secondary-color);
+    width: 20%;
+    border-right: 4px solid var(--secondary-color);
+}
+
+.content{
+    margin: 10px;
+    width: 80%;
+    display: flex;
+}
+
+/* About Me Section Styles */
+
+/* Projects Section Styles */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.primary-project{
+    margin: 1%;
+    padding: 20px;
+    width: 100%;
+    height: 400px;
+    background-color: turquoise;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+.project{
+    margin: 1%;
+    padding: 20px;
+    width: 48%;
+    height: 200px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
+/* Contact Section Styles */
+.contact-info{
+    justify-content: space-evenly;
+}
+
+.contact-info h3{
+    margin: 40px;
+}
+
+/* Footer Styles */
+footer{
+    width: 100%;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+}
