@@ -67,7 +67,7 @@ header li:last-child{
     border-bottom-right-radius: 8px;
 }
 
-header div{
+header .side-decoration{
     width: 10%;
     height: 100vh;
     background-color: var(--tertiary-color);
@@ -121,7 +121,7 @@ header div{
     color: var(--secondary-color);
     font-size: 1.3vw;
     min-width: 12%;
-    margin: 50px 4% 30px 0;
+    margin: 60px 4% 0px 0;
     padding: 10px 20px 0px 0px;
     border-right: 4px solid var(--secondary-color);
     display: flex;
@@ -130,7 +130,7 @@ header div{
 }
 
 .content{
-    margin: 50px 10% 30px -6px;
+    margin: 60px 10% 0px -6px;
     width: 90%;
     display: flex;
 }
@@ -190,6 +190,10 @@ header div{
     text-decoration: none;
 }
 
+.horiseon{
+    background-image: url("../images/horiseon.png");
+}
+
 .layer{
     background-color:rgba(0,0,0,.50);
     width: 100%;
@@ -203,8 +207,6 @@ header div{
 .layer:hover{
     background-color:rgba(0,0,0,0);
 }
-
-
 
 .projects .description{
     background-color: var(--tertiary-color);
@@ -229,30 +231,37 @@ header div{
     flex-wrap: wrap;
 }
 
-.contact-info h3{
+.contact-info a{
     padding: 80px 0px;
     text-align: center;
     width: 25%;
-    min-width: 240px;
-    font-size: 1.2vw;
-    text-decoration: underline;
+    font-size: 1.1vw;
+    text-decoration: none;
     color: var(--secondary-color);
     border-radius: 10px;
 }
 
-.contact-info h3:hover{
+.contact-info a:hover{
     font-weight: bold;
     background-color: wheat;
+    text-decoration: underline;
 }
 
 /* Footer Styles */
+
 footer{
+    background-color: var(--primary-color);
+    display: flex;
+}
+
+footer h2{
     width: 100%;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     display: flex;
     justify-content: center;
     padding: 20px 0px;
+    margin-top: 40px;
 }
 
 /* Screen Size Modifications */
@@ -274,30 +283,44 @@ footer{
         justify-content: center;
     }
 
-    .about-me div{
+    .about-me .my-picture{
         width:80%;
     }
 
     .about-me p{
         font-size: 1.8vw;
-        width: 100%;
+        padding: 40px 0px 0px 0px;
+        width: 80%;
+    }
+
+    .contact-info a{
+        width: 40%;
+        border-bottom: 3px solid var(--tertiary-color);
     }
 
     .contact-info h3{
-        width: 50%;
-        font-size: 20px;
+        font-size: 2em;
     }
 }
 
 @media screen and (max-width: 768px){
-    .about-me div{
-        width:90%;
+
+    .hero h2{
+        font-size: 44px;
+    }
+    
+    .hero h3{
+        font-size: 26px;
+    }
+
+    .about-me .my-picture{
+        width: 90%;
     }
 
     .about-me p{
         font-size: 2.4vw;
-        width: 100%;
-        padding: 20px 0;
+        width: 90%;
+        padding: 30px 0 0 0;
     }
 }
 
@@ -351,7 +374,7 @@ footer{
         border-bottom-right-radius: 0px;
     }
     
-    header div{
+    header .side-decoration{
         width: 0;
         height: 0;
         background-color: none;
@@ -363,9 +386,18 @@ footer{
         align-items: center;
     }
 
+    .hero h2{
+        font-size: 36px;
+    }
+    
+    .hero h3{
+        font-size: 20px;
+    }
+
     .side-title{
         width: 10%;
-        margin: 3% 5% 3% 0;
+        margin: 12% 5% 0% 0;
+        padding-right: 4px;
         position: relative;
     }
 
@@ -380,10 +412,10 @@ footer{
     }
 
     .content{
-        margin: 3% 10% 3% 0;
+        margin: 12% 10% 0 0;
     }
 
-    .about-me div{
+    .about-me .my-picture{
         width:100%;
     }
 
@@ -392,8 +424,34 @@ footer{
         width: 100%;
     }
 
-    .contact-info h3{
+    .projects .description{
+        padding: 8px;
+        height: 60px;
+        width: 160px;
+        margin: 20px 0;
+    }
+
+    .projects h3{
+        font-size: 16px;
+    }
+
+    .projects h4{
+        font-weight: lighter;
+        font-size: 12px;
+        line-height: 2;
+    }
+
+    .contact-info a{
         width: 100%;
         padding: 40px 0;
+        border-bottom: 3px solid var(--tertiary-color);
+    }
+
+    .contact-info h3{
+        font-size: 4em;
+    }
+
+    footer h2{
+        margin-top: 6%;
     }
 }
