@@ -164,7 +164,7 @@ header .side-decoration{
 .primary-project{
     width: 100%;
     height: 400px;
-    background-image: url("../images/run-buddy.png");
+    background-image: url("../images/tonight.png");
     background-size: cover;
     display: flex;
     flex-wrap: wrap;
@@ -190,8 +190,21 @@ header .side-decoration{
     text-decoration: none;
 }
 
+.weather{
+    background-image: url("../images/weather.png");
+}
+
+.scheduler{
+    background-image: url("../images/scheduler.png");
+}
+
+
 .horiseon{
     background-image: url("../images/horiseon.png");
+}
+
+.run-buddy{
+    background-image: url("../images/run-buddy.png");
 }
 
 .layer{
@@ -212,7 +225,7 @@ header .side-decoration{
     background-color: var(--tertiary-color);
     padding: 20px;
     height: 80px;
-    width: 180px;
+    width: auto;
     margin: 20px 0;
     color: var(--primary-color);
     border-top-right-radius: 6px;
