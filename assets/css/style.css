@@ -173,6 +173,7 @@ header .side-decoration{
     border: 6px solid var(--tertiary-color);
     border-radius: 8px;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .project{
@@ -188,6 +189,14 @@ header .side-decoration{
     border: 6px solid var(--tertiary-color);
     border-radius: 8px;
     text-decoration: none;
+}
+
+.localshop{
+    background-image: url("../images/localshop.png");
+}
+
+.tonight{
+    background-image: url("../images/tonight.png");
 }
 
 .weather{
